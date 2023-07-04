@@ -1,0 +1,340 @@
+@font-face {
+    font-family: MullerRegular;
+    src: url(./fonts/MullerRegular.woff),
+     url(./fonts/MullerRegular.woff2);
+}
+@font-face {
+    font-family: MullerBold;
+    src: url(./fonts/MullerBold.woff) 
+      url(./fonts/MullerBold.woff2);
+}
+@font-face {
+    font-family: Russo One ;
+    src: url(./fonts/Russo_One.zip);
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+.body {
+    font-family: MullerRegular;
+}
+.first_screen{
+    background-image: url(./img/background.jpg);
+    height: 800px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    padding-top: 50px;
+
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+    
+}
+.container {
+    padding: 0 62px 0 110px;
+}
+
+/*Логотип*/
+.header-logo {
+    display: flex; 
+}
+.logo-img {
+    height: 60px;
+    margin: 0 10px;
+}
+.logo-text {
+    font-size: 23px;
+    color: #46B1DE;
+    font-family: "Russo One" , sans-serif;
+}
+.zub {
+    
+    font-size: 25px;
+}
+/*Меню*/
+.nav {
+    display: grid;
+    height: 60px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 44px;
+    justify-content: space-between;
+    
+}
+.nav-item {
+    text-decoration: none;
+    font-weight: 600;
+    color: black;
+    font-size: 20px;
+    gap: 0 80px;
+}
+.nav-item:hover {
+    color: #46B1DE;
+}
+/*Номер телефону*/
+.num {
+    color: black;
+    text-decoration: none;
+
+    transition: color 0.3s linear;
+}
+.num:hover {
+    color: #46B1DE;
+}
+.phone-holder {
+    padding-right: 8px;
+
+
+}
+/*Текст опис*/
+.header-dowen {
+    font-family: "Russo One",sans-serif;
+    max-width: 530px;
+    padding-top: 50px;
+}
+h1 {
+    font-size: 40px;
+    font-weight: 700;
+}
+.header-text {
+    color: #46B1DE;
+}
+.header-subtitel {
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 10px;
+}
+/*Кнопки*/
+.header-bth {
+    display: flex;
+    margin: 50px 0 270px 0;
+}
+.header-button {
+    background-color:#46B1DE;
+    padding: 15px 30px;
+    color: azure;
+    font-size: 20px;
+    text-decoration: none;
+    font-weight: 700;
+    border-radius: 8px;
+    border: 1px solid;
+    margin: 20px;
+    
+}
+/*Картки*/
+.cards {
+    display: flex;
+    grid-column-gap: 40px;
+    position: relative;
+    z-index: 3;
+    justify-content: center;
+
+}
+.card {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    width: 280px;
+    border-radius: 8px;
+    background-color: #fffcfc;
+    border: 1px solid;
+}
+.card-titel {
+    color: #46B1DE;
+    margin: 0 10px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 55px;
+    font-weight: 500;
+    
+}
+.card-desc {
+    font-size: 19px;
+    font-weight: 500;
+    vertical-align: middle;
+}
+/*Фото Леді*/
+.foto {
+    position: absolute;
+    z-index: 1;
+    left: 630px;
+    top: 210px;
+}
+/*Друга частина*/
+.second-screen {
+    display: flex;
+    justify-content: center;
+    margin: 80px 0 40px 0;
+}
+.why-me {
+    font-family: "Russo One", sans-serif;
+    margin-bottom: 45px;
+    text-align: center;
+}
+.why-me-titel {
+    font-size: 40px;
+}
+.color-blue {
+    color: #46B1DE;
+}
+.text-titel {
+    margin-top: 10px;
+    font-size: 20px;
+}
+/*Блоки*/
+.box-cards {
+    display: flex;
+    flex-direction: column;
+    background-color:  #A1C7D4;
+    border: 1px solid #000000;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 12px;
+}
+
+.box-first {
+    display: flex;
+    justify-content: center;
+}
+
+.box-second {
+    display: flex;
+    justify-content: center;
+}
+.box-card {
+    margin: 20px 13px;
+    padding: 5px;
+    height: 120px;
+    background: #FFFFFF;
+    border-radius: 10px;
+}
+.color-titel {
+    font-family: "Russo One",sans-serif;
+    display: flex;
+    align-items: center;
+    text-align: left;
+    font-size: 20px;
+    color: #46b1de;
+    padding: 5px;
+}
+.box-titel {
+    display: flex;
+    width: 217px;
+    height: 38px;
+    flex-direction: column;
+    flex-shrink: 0;
+    font-size: 18px;
+    font-weight: 700;
+}
+.box-text {
+    padding: 10px;
+    text-align: left;
+}
+/*Футер картка*/
+.footer {
+    position: relative;
+    display: grid;
+    margin: 30px 30px auto;
+    justify-content: space-between;
+    grid-template-columns: 400px 400px;
+    max-width: 100%;
+    max-height: max-content;
+    padding-top: 34px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border: 1px solid #000000;
+    padding-left: 25px;
+    background:linear-gradient(to right, #dae5ea, #5d9baf, #169dd7);
+}
+/*Нвігація картки*/
+.footer-logo {
+    display: flex;
+    align-items: center;
+    font-size: 25px;
+    color: #061a2e;
+}
+.footer-nav {
+    display: grid;
+    grid-template-rows: 0fr 1fr 1fr;
+    padding-top: 50px;
+    gap: 15px 0px;
+    align-items: center;
+}
+.about_item {
+    padding-left: 20px;
+    font-size: 30px;
+    color: #061a2e;
+    text-decoration: none;
+}
+.lang_item {
+    padding-left: 20px;
+    color: #061a2e;
+    text-decoration: none;
+    font-family: "Russo One", sans-serif;
+}
+.work_time {
+    color: #061a2e;
+    margin-top: -290px;
+    padding-left: 270px;
+    
+}
+.day_work {
+    color: #061a2e;
+    padding-top: 20px;
+   
+}
+/*Контакти*/
+.footer-contact {
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+.contact-info {
+    padding-top: 15px;
+}
+.contact-info span {
+    font-size: 30px;
+    text-transform: uppercase;
+    font-family: "Russo One", sans-serif;
+}
+.contact-nav {
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+}
+.telefon {
+    display: flex;
+    align-items: center;
+    grid-gap: 15px;
+    padding-top: 15px;
+}
+/*Месенджери*/
+.messanger {
+    display: flex;
+    padding-top: 20px;
+    align-items: center;
+    grid-gap: 18px;
+}
+.whatsapp {
+    height: 30px;
+}
+/*Інстаграм*/
+.instagram {
+    display: flex;
+    padding-top: 20px;
+    align-items: center;
+    grid-gap: 18px;
+}
+/*Пошта*/
+.email {
+    display: flex;
+    padding-top: 20px;
+    align-items: center;
+    grid-gap: 18px; 
+}
+.contact-nav span {
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+    font-size: 15px;
+}
+
